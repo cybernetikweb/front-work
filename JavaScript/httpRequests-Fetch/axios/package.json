@@ -1,0 +1,10 @@
+{
+  "name": "library",
+  "version": "1.0.0",
+  "description": "axios",
+  "main": "app.js",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.20.0"
+  }
+}
