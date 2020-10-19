@@ -18,7 +18,7 @@ dbRequest.onupgradeneeded = e => {
     }
 }
 
-dbRequest.onerror = e => {
+dbRequest.onerror = () => {
     console.log('Error!')
 }
 
@@ -35,5 +35,5 @@ rtvBtn.addEventListener('click', () => {
     const productStore = db.transaction('products', 'readwrite').objectStore('products');
     const request = productStore.get('p2');
 
-    request.onsuccess = e => console.log(request.result);
+    request.onsuccess = () => console.log(request.result);
 })

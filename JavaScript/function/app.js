@@ -7,10 +7,9 @@ console.log(add(1, 2));
 // this is a factory function
 // An function who return another function
 const taxCalculator = tax => {
-    const calculateTax = amount => {
+    return amount => {
         return amount * tax
     };
-    return calculateTax;
 };
 
 const calculateVatAmount = taxCalculator(0.19);
